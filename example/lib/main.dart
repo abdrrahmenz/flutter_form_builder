@@ -18,20 +18,20 @@ class MyApp extends StatelessWidget {
           labelStyle: TextStyle(color: Colors.blueAccent),
         ),
       ),
-      localizationsDelegates: [
-        FormBuilderLocalizations.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ],
-      supportedLocales: [
-        Locale('en', ''),
-        Locale('es', ''),
-        Locale('fr', ''),
-        Locale('ja', ''),
-        Locale('pt', ''),
-        Locale('sk', ''),
-        Locale('pl', ''),
-      ],
+      // localizationsDelegates: [
+      //   FormBuilderLocalizations.delegate,
+      //   GlobalMaterialLocalizations.delegate,
+      //   GlobalWidgetsLocalizations.delegate,
+      // ],
+      // supportedLocales: [
+      //   Locale('en', ''),
+      //   Locale('es', ''),
+      //   Locale('fr', ''),
+      //   Locale('ja', ''),
+      //   Locale('pt', ''),
+      //   Locale('sk', ''),
+      //   Locale('pl', ''),
+      // ],
       home: HomePage(),
     );
   }

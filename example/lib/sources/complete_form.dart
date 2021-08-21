@@ -28,6 +28,24 @@ class CompleteFormState extends State<CompleteForm> {
       child: SingleChildScrollView(
         child: Column(
           children: <Widget>[
+            FormBuilderChoiceChip(
+              name: 'choice_chip',
+              decoration: InputDecoration(
+                labelText: 'Select an option',
+              ),
+              pressElevation: 0,
+              shape: RoundedRectangleBorder(
+                side: BorderSide(color: Colors.red, width: 1),
+                borderRadius: BorderRadius.circular(6),
+              ),
+              options: [
+                FormBuilderFieldOption(value: 'Test', child: Text('Test')),
+                FormBuilderFieldOption(value: 'Test 1', child: Text('Test 1')),
+                FormBuilderFieldOption(value: 'Test 2', child: Text('Test 2')),
+                FormBuilderFieldOption(value: 'Test 3', child: Text('Test 3')),
+                FormBuilderFieldOption(value: 'Test 4', child: Text('Test 4')),
+              ],
+            ),
             FormBuilder(
               key: _formKey,
               // enabled: false,
@@ -56,7 +74,7 @@ class CompleteFormState extends State<CompleteForm> {
                           }),
                     ),
                     initialTime: TimeOfDay(hour: 8, minute: 0),
-                    locale: Locale.fromSubtags(languageCode: 'fr'),
+                    // locale: Locale.fromSubtags(languageCode: 'fr'),
                   ),
                   FormBuilderDateRangePicker(
                     name: 'date_range',
